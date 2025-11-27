@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RunTroop - Legal Policies</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --color-primary: #005427;
+            --color-background: #FFFFFF;
+            --color-surface: #FFFFFF;
+            --color-text: #0A0A0A;
+            --color-text-secondary: #333333;
+            --color-border: #E5E5E5;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --color-primary: #67FFB3;
+                --color-background: #0B0B0B;
+                --color-surface: #161616;
+                --color-text: #FFFFFF;
+                --color-text-secondary: #E0E0E0;
+                --color-border: #2A2A2A;
+            }
+        }
+
+        body {
+            font-family: 'Atkinson Hyperlegible', sans-serif;
+            background-color: var(--color-background);
+            color: var(--color-text);
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            text-align: center;
+            padding: 3rem 0;
+            border-bottom: 2px solid var(--color-border);
+            margin-bottom: 3rem;
+        }
+
+        .logo {
+            width: 120px;
+            height: 120px;
+            background-color: var(--color-primary);
+            border-radius: 24px;
+            margin: 0 auto 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 60px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--color-text);
+            margin-bottom: 0.5rem;
+        }
+
+        .tagline {
+            font-size: 1.5rem;
+            color: var(--color-text-secondary);
+            margin-bottom: 1rem;
+        }
+
+        .subtitle {
+            font-size: 1.125rem;
+            color: var(--color-text-secondary);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .policies-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .policy-card {
+            background-color: var(--color-surface);
+            border: 2px solid var(--color-border);
+            border-radius: 12px;
+            padding: 2rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: block;
+        }
+
+        .policy-card:hover,
+        .policy-card:focus {
+            border-color: var(--color-primary);
+            transform: translateY(-4px);
+            box-shadow: 0 8px 16px rgba(0, 84, 39, 0.1);
+        }
+
+        .policy-card h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--color-text);
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .policy-card p {
+            color: var(--color-text-secondary);
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        .icon {
+            font-size: 1.5rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 3rem 0;
+            border-top: 2px solid var(--color-border);
+            margin-top: 4rem;
+        }
+
+        footer p {
+            color: var(--color-text-secondary);
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-link {
+            color: var(--color-primary);
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        .contact-link:hover,
+        .contact-link:focus {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .tagline {
+                font-size: 1.25rem;
+            }
+
+            .policies-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo" aria-label="RunTroop Logo">🏃</div>
+            <h1>RunTroop</h1>
+            <p class="tagline">Run Together, Stay Safe</p>
+            <p class="subtitle">Legal Policies & Privacy Information</p>
+        </header>
+
+        <main>
+            <div class="policies-grid">
+                <a href="privacy-policy.html" class="policy-card">
+                    <h2><span class="icon" aria-hidden="true">🔒</span> Privacy Policy</h2>
+                    <p>Learn how we collect, use, and protect your personal data and GPS location information.</p>
+                </a>
+
+                <a href="terms-of-service.html" class="policy-card">
+                    <h2><span class="icon" aria-hidden="true">📋</span> Terms of Service</h2>
+                    <p>Understand your rights and responsibilities when using RunTroop.</p>
+                </a>
+
+                <a href="data-deletion.html" class="policy-card">
+                    <h2><span class="icon" aria-hidden="true">🗑️</span> Data Deletion</h2>
+                    <p>Instructions on how to request deletion of your personal data from our systems.</p>
+                </a>
+
+                <a href="safety-policy.html" class="policy-card">
+                    <h2><span class="icon" aria-hidden="true">🛡️</span> Safety & Security</h2>
+                    <p>How we keep you safe during group runs with real-time location tracking.</p>
+                </a>
+            </div>
+        </main>
+
+        <footer>
+            <p><strong>Last Updated:</strong> November 27, 2025</p>
+            <p>Questions? Contact us at <a href="mailto:support@runtroop.app" class="contact-link">support@runtroop.app</a></p>
+            <p style="margin-top: 1rem;">© 2025 RunTroop. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

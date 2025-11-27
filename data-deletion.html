@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Deletion Policy - RunTroop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --color-primary: #005427;
+            --color-background: #FFFFFF;
+            --color-surface: #FFFFFF;
+            --color-text: #0A0A0A;
+            --color-text-secondary: #333333;
+            --color-border: #E5E5E5;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --color-primary: #67FFB3;
+                --color-background: #0B0B0B;
+                --color-surface: #161616;
+                --color-text: #FFFFFF;
+                --color-text-secondary: #E0E0E0;
+                --color-border: #2A2A2A;
+            }
+        }
+
+        body {
+            font-family: 'Atkinson Hyperlegible', sans-serif;
+            background-color: var(--color-background);
+            color: var(--color-text);
+            line-height: 1.8;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            padding: 2rem 0;
+            border-bottom: 2px solid var(--color-border);
+            margin-bottom: 3rem;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--color-primary);
+            text-decoration: none;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            font-size: 1.125rem;
+        }
+
+        .back-link:hover,
+        .back-link:focus {
+            text-decoration: underline;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--color-text);
+            margin-bottom: 0.5rem;
+        }
+
+        .last-updated {
+            color: var(--color-text-secondary);
+            font-size: 1rem;
+        }
+
+        h2 {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: var(--color-text);
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--color-text);
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: var(--color-text);
+            font-size: 1.125rem;
+        }
+
+        ul, ol {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+            color: var(--color-text);
+            font-size: 1.125rem;
+        }
+
+        strong {
+            font-weight: 700;
+            color: var(--color-text);
+        }
+
+        .highlight-box {
+            background-color: var(--color-surface);
+            border-left: 4px solid var(--color-primary);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        .warning-box {
+            background-color: var(--color-surface);
+            border-left: 4px solid #9B002C;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        .code-box {
+            background-color: var(--color-surface);
+            border: 2px solid var(--color-border);
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+            font-family: monospace;
+            font-size: 1rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 3rem 0;
+            border-top: 2px solid var(--color-border);
+            margin-top: 4rem;
+        }
+
+        footer p {
+            color: var(--color-text-secondary);
+            font-size: 1rem;
+        }
+
+        .contact-link {
+            color: var(--color-primary);
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        .contact-link:hover,
+        .contact-link:focus {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            p, li {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html" class="back-link" aria-label="Back to policies home">← Back to Policies</a>
+            <h1>Data Deletion Policy</h1>
+            <p class="last-updated">Last Updated: November 27, 2025</p>
+        </header>
+
+        <main>
+            <div class="highlight-box">
+                <p><strong>Your Data, Your Choice:</strong> You have complete control over your data. This policy explains how to delete your information from RunTroop.</p>
+            </div>
+
+            <h2>1. Automatic Data Deletion</h2>
+            
+            <h3>Location Data</h3>
+            <p>RunTroop automatically deletes certain data after a specified period:</p>
+            <ul>
+                <li><strong>GPS location points</strong> - Deleted automatically after 30 days</li>
+                <li><strong>Run tracking data</strong> - Historical positions removed after 30 days</li>
+                <li><strong>Real-time location</strong> - Cleared when you leave a run or the run ends</li>
+            </ul>
+
+            <h3>What Remains After 30 Days</h3>
+            <p>Only anonymized, statistical data is retained:</p>
+            <ul>
+                <li>Total distance traveled (no location coordinates)</li>
+                <li>Run duration and date</li>
+                <li>Number of participants (no personal identifiers)</li>
+            </ul>
+
+            <h2>2. Manual Account Deletion</h2>
+            
+            <div class="highlight-box">
+                <p><strong>Complete Removal:</strong> Deleting your account permanently removes all your personal data from RunTroop.</p>
+            </div>
+
+            <h3>Option 1: In-App Deletion (Coming Soon)</h3>
+            <ol>
+                <li>Open the RunTroop app</li>
+                <li>Go to Settings/Profile</li>
+                <li>Tap "Delete Account"</li>
+                <li>Confirm your decision</li>
+                <li>Your account and data will be deleted immediately</li>
+            </ol>
+
+            <h3>Option 2: Email Request</h3>
+            <p>Send an email to <a href="mailto:delete@runtroop.app" class="contact-link">delete@runtroop.app</a> with:</p>
+            
+            <div class="code-box">
+                <p><strong>Subject:</strong> Delete My RunTroop Account</p>
+                <p><strong>Include:</strong></p>
+                <ul style="margin-left: 1.5rem;">
+                    <li>Your registered email address</li>
+                    <li>Your display name (if different)</li>
+                    <li>Confirmation that you want to permanently delete all data</li>
+                </ul>
+            </div>
+
+            <h3>Response Time</h3>
+            <ul>
+                <li>We'll confirm receipt within 24 hours</li>
+                <li>Account deletion will be completed within 7 days</li>
+                <li>You'll receive confirmation when deletion is complete</li>
+            </ul>
+
+            <h2>3. What Gets Deleted</h2>
+            
+            <p>When you delete your account, we permanently remove:</p>
+            
+            <h3>Personal Information</h3>
+            <ul>
+                <li>Email address</li>
+                <li>Display name</li>
+                <li>Password (encrypted hash)</li>
+                <li>Profile data</li>
+                <li>Authentication tokens</li>
+            </ul>
+
+            <h3>Activity Data</h3>
+            <ul>
+                <li>All GPS location history</li>
+                <li>Run participation records</li>
+                <li>Club memberships</li>
+                <li>Routes you've created or uploaded</li>
+            </ul>
+
+            <h3>Usage Data</h3>
+            <ul>
+                <li>Device information</li>
+                <li>App usage statistics</li>
+                <li>Login history</li>
+            </ul>
+
+            <h2>4. What May Be Retained</h2>
+            
+            <div class="warning-box">
+                <p><strong>Important:</strong> Certain data may be retained for legal or operational reasons.</p>
+            </div>
+
+            <h3>Anonymized Statistics</h3>
+            <p>We may retain aggregated, anonymized data that cannot identify you:</p>
+            <ul>
+                <li>Total number of users (count only)</li>
+                <li>Average distances run (no individual data)</li>
+                <li>App usage trends (aggregated)</li>
+            </ul>
+
+            <h3>Legal Requirements</h3>
+            <p>Data may be retained if required by law:</p>
+            <ul>
+                <li>Court orders or legal proceedings</li>
+                <li>Compliance with regulations</li>
+                <li>Investigation of terms violations</li>
+                <li>Financial records (if applicable)</li>
+            </ul>
+
+            <h3>Backup Systems</h3>
+            <ul>
+                <li>Data in backup systems will be deleted within 90 days</li>
+                <li>Backups are for disaster recovery only</li>
+                <li>We cannot restore your account after deletion</li>
+            </ul>
+
+            <h2>5. Impact on Running Clubs</h2>
+            
+            <h3>If You're a Club Member</h3>
+            <ul>
+                <li>You'll be removed from all clubs automatically</li>
+                <li>Your past run participation records will be anonymized</li>
+                <li>Other members won't see your personal information</li>
+            </ul>
+
+            <h3>If You're a Club Owner</h3>
+            <div class="warning-box">
+                <p><strong>Important for Club Owners:</strong> Deleting your account affects clubs you created.</p>
+            </div>
+            
+            <ul>
+                <li><strong>You must transfer ownership first</strong> if you want the club to continue</li>
+                <li>If you delete without transferring, your clubs will be marked as archived</li>
+                <li>Archived clubs cannot start new runs</li>
+                <li>Members can still leave archived clubs</li>
+                <li>After 30 days, archived clubs are permanently deleted</li>
+            </ul>
+
+            <h3>Transferring Club Ownership Before Deletion</h3>
+            <ol>
+                <li>Open your club in the app</li>
+                <li>Go to Club Settings</li>
+                <li>Select "Transfer Ownership"</li>
+                <li>Choose a trusted member</li>
+                <li>Confirm the transfer</li>
+                <li>Then proceed with account deletion</li>
+            </ol>
+
+            <h2>6. Data Deletion from Third-Party Services</h2>
+            
+            <p>RunTroop uses external services that also store data:</p>
+
+            <h3>Supabase (Database)</h3>
+            <ul>
+                <li>Data is deleted from our database immediately</li>
+                <li>Backups are purged within 90 days</li>
+                <li>Supabase complies with GDPR deletion requirements</li>
+            </ul>
+
+            <h3>Google Maps</h3>
+            <ul>
+                <li>Google Maps only receives anonymized location data</li>
+                <li>No personal data is sent to Google Maps</li>
+                <li>Map tiles are cached temporarily on your device only</li>
+            </ul>
+
+            <h3>Expo Services</h3>
+            <ul>
+                <li>Expo only stores app crash logs (anonymous)</li>
+                <li>No personal data is sent to Expo</li>
+                <li>Crash logs are automatically deleted after 90 days</li>
+            </ul>
+
+            <h2>7. Alternatives to Full Deletion</h2>
+            
+            <p>If you're not ready for permanent deletion, consider these options:</p>
+
+            <h3>Leave Clubs Instead</h3>
+            <ul>
+                <li>You can leave individual clubs without deleting your account</li>
+                <li>Your location won't be shared with that club anymore</li>
+                <li>You can rejoin later if you change your mind</li>
+            </ul>
+
+            <h3>Revoke Location Permissions</h3>
+            <ul>
+                <li>Turn off location access in your device settings</li>
+                <li>The app won't track you without permission</li>
+                <li>You can still browse clubs and routes</li>
+            </ul>
+
+            <h3>Temporary Break</h3>
+            <ul>
+                <li>Simply stop using the app</li>
+                <li>Your account remains but inactive</li>
+                <li>Location data auto-deletes after 30 days anyway</li>
+                <li>No data is collected when you're not using the app</li>
+            </ul>
+
+            <h2>8. Reactivation After Deletion</h2>
+            
+            <div class="warning-box">
+                <p><strong>Deletion is Permanent:</strong> Once your account is deleted, it cannot be recovered.</p>
+            </div>
+
+            <ul>
+                <li>You cannot reactivate a deleted account</li>
+                <li>You can create a new account with the same email</li>
+                <li>Your previous clubs and data will not be restored</li>
+                <li>You'll need to rejoin clubs with new invitation codes</li>
+            </ul>
+
+            <h2>9. Children's Data</h2>
+            
+            <p>For users under 18:</p>
+            <ul>
+                <li>Parents/guardians can request deletion on your behalf</li>
+                <li>Email <a href="mailto:delete@runtroop.app" class="contact-link">delete@runtroop.app</a> with proof of guardianship</li>
+                <li>We'll verify the relationship before proceeding</li>
+                <li>Deletion follows the same process as adult accounts</li>
+            </ul>
+
+            <h2>10. GDPR Rights (EU Users)</h2>
+            
+            <p>If you're in the European Union, you have additional rights:</p>
+
+            <h3>Right to be Forgotten</h3>
+            <ul>
+                <li>You can request complete data erasure</li>
+                <li>We must comply within 30 days</li>
+                <li>Exceptions apply for legal obligations</li>
+            </ul>
+
+            <h3>Right to Data Portability</h3>
+            <ul>
+                <li>Request a copy of your data before deletion</li>
+                <li>Data provided in machine-readable format (JSON)</li>
+                <li>Email <a href="mailto:data@runtroop.app" class="contact-link">data@runtroop.app</a> for data export</li>
+            </ul>
+
+            <h3>Right to Restrict Processing</h3>
+            <ul>
+                <li>Request temporary suspension of data processing</li>
+                <li>Your data remains but is not actively used</li>
+                <li>Useful if you're disputing data accuracy</li>
+            </ul>
+
+            <h2>11. Verification Process</h2>
+            
+            <p>To protect your privacy, we verify all deletion requests:</p>
+
+            <h3>What We'll Ask For</h3>
+            <ul>
+                <li>Your registered email address</li>
+                <li>Confirmation from that email account</li>
+                <li>Answer to a security question (if applicable)</li>
+            </ul>
+
+            <h3>Why We Verify</h3>
+            <ul>
+                <li>Prevents unauthorized account deletion</li>
+                <li>Protects you from malicious requests</li>
+                <li>Ensures the real account owner is making the request</li>
+            </ul>
+
+            <h2>12. Deletion Timeline</h2>
+            
+            <table style="width: 100%; border-collapse: collapse; margin: 2rem 0;">
+                <thead>
+                    <tr style="background-color: var(--color-surface); border-bottom: 2px solid var(--color-border);">
+                        <th style="padding: 1rem; text-align: left; font-size: 1.125rem;">Timeframe</th>
+                        <th style="padding: 1rem; text-align: left; font-size: 1.125rem;">What Happens</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="border-bottom: 1px solid var(--color-border);">
+                        <td style="padding: 1rem;"><strong>Within 24 hours</strong></td>
+                        <td style="padding: 1rem;">Request acknowledged via email</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid var(--color-border);">
+                        <td style="padding: 1rem;"><strong>Within 7 days</strong></td>
+                        <td style="padding: 1rem;">Account and data deleted from active systems</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid var(--color-border);">
+                        <td style="padding: 1rem;"><strong>Within 30 days</strong></td>
+                        <td style="padding: 1rem;">Data removed from live backups</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 1rem;"><strong>Within 90 days</strong></td>
+                        <td style="padding: 1rem;">Complete removal from all backup systems</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>13. Questions or Issues</h2>
+            
+            <p>If you have questions about data deletion:</p>
+            <ul>
+                <li><strong>Deletion Requests:</strong> <a href="mailto:delete@runtroop.app" class="contact-link">delete@runtroop.app</a></li>
+                <li><strong>Data Export:</strong> <a href="mailto:data@runtroop.app" class="contact-link">data@runtroop.app</a></li>
+                <li><strong>General Privacy:</strong> <a href="mailto:privacy@runtroop.app" class="contact-link">privacy@runtroop.app</a></li>
+                <li><strong>Support:</strong> <a href="mailto:support@runtroop.app" class="contact-link">support@runtroop.app</a></li>
+            </ul>
+
+            <h2>14. Related Policies</h2>
+            
+            <p>For more information, see:</p>
+            <ul>
+                <li><a href="privacy-policy.html" class="contact-link">Privacy Policy</a> - How we collect and use data</li>
+                <li><a href="terms-of-service.html" class="contact-link">Terms of Service</a> - Your rights and responsibilities</li>
+                <li><a href="safety-policy.html" class="contact-link">Safety & Security Policy</a> - How we protect you</li>
+            </ul>
+        </main>
+
+        <footer>
+            <p><a href="index.html" class="contact-link">← Back to all policies</a></p>
+            <p style="margin-top: 1rem;">© 2025 RunTroop. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
