@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safety & Security Policy - RunTroop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --color-primary: #005427;
+            --color-background: #FFFFFF;
+            --color-surface: #FFFFFF;
+            --color-text: #0A0A0A;
+            --color-text-secondary: #333333;
+            --color-border: #E5E5E5;
+            --color-success: #007A3D;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --color-primary: #67FFB3;
+                --color-background: #0B0B0B;
+                --color-surface: #161616;
+                --color-text: #FFFFFF;
+                --color-text-secondary: #E0E0E0;
+                --color-border: #2A2A2A;
+                --color-success: #67FFB3;
+            }
+        }
+
+        body {
+            font-family: 'Atkinson Hyperlegible', sans-serif;
+            background-color: var(--color-background);
+            color: var(--color-text);
+            line-height: 1.8;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            padding: 2rem 0;
+            border-bottom: 2px solid var(--color-border);
+            margin-bottom: 3rem;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--color-primary);
+            text-decoration: none;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            font-size: 1.125rem;
+        }
+
+        .back-link:hover,
+        .back-link:focus {
+            text-decoration: underline;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--color-text);
+            margin-bottom: 0.5rem;
+        }
+
+        .last-updated {
+            color: var(--color-text-secondary);
+            font-size: 1rem;
+        }
+
+        h2 {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: var(--color-text);
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--color-text);
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: var(--color-text);
+            font-size: 1.125rem;
+        }
+
+        ul {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+            color: var(--color-text);
+            font-size: 1.125rem;
+        }
+
+        strong {
+            font-weight: 700;
+            color: var(--color-text);
+        }
+
+        .highlight-box {
+            background-color: var(--color-surface);
+            border-left: 4px solid var(--color-primary);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        .success-box {
+            background-color: var(--color-surface);
+            border-left: 4px solid var(--color-success);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        .warning-box {
+            background-color: var(--color-surface);
+            border-left: 4px solid #9B002C;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        .emergency-box {
+            background-color: var(--color-surface);
+            border: 3px solid #9B002C;
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .emergency-box h3 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .emergency-box p {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        footer {
+            text-align: center;
+            padding: 3rem 0;
+            border-top: 2px solid var(--color-border);
+            margin-top: 4rem;
+        }
+
+        footer p {
+            color: var(--color-text-secondary);
+            font-size: 1rem;
+        }
+
+        .contact-link {
+            color: var(--color-primary);
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        .contact-link:hover,
+        .contact-link:focus {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            p, li {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html" class="back-link" aria-label="Back to policies home">← Back to Policies</a>
+            <h1>Safety & Security Policy</h1>
+            <p class="last-updated">Last Updated: November 27, 2025</p>
+        </header>
+
+        <main>
+            <div class="highlight-box">
+                <p><strong>Our Mission:</strong> RunTroop exists to make group running safer through real-time location sharing and club coordination. Your safety is our top priority.</p>
+            </div>
+
+            <div class="emergency-box">
+                <h3>🚨 IN AN EMERGENCY 🚨</h3>
+                <p>Always call emergency services first</p>
+                <p style="font-size: 2rem; margin-top: 1rem;">UK: 999 | US: 911</p>
+                <p style="font-size: 1rem; margin-top: 1rem;">RunTroop is NOT an emergency service</p>
+            </div>
+
+            <h2>1. How RunTroop Enhances Safety</h2>
+            
+            <h3>Real-Time Location Tracking</h3>
+            <ul>
+                <li><strong>See everyone's position</strong> - Know where all group members are during runs</li>
+                <li><strong>Updates every 5 seconds</strong> - Near real-time position tracking</li>
+                <li><strong>Route paths shown</strong> - See the path each runner has taken</li>
+                <li><strong>Last update time</strong> - Know when each position was recorded</li>
+            </ul>
+
+            <h3>Club-Based Organization</h3>
+            <ul>
+                <li><strong>Controlled membership</strong> - Only club members can see your location</li>
+                <li><strong>Designated leaders</strong> - Club owners can monitor the entire group</li>
+                <li><strong>Planned routes</strong> - Upload and share routes in advance</li>
+                <li><strong>Run history</strong> - Records of who participated in each run</li>
+            </ul>
+
+            <h3>Privacy Controls</h3>
+            <ul>
+                <li><strong>Opt-in tracking</strong> - Location only shared when you join a run</li>
+                <li><strong>Leave anytime</strong> - Stop sharing location instantly by leaving the run</li>
+                <li><strong>Club-only visibility</strong> - Your location never visible outside your clubs</li>
+                <li><strong>Automatic cleanup</strong> - Location data deleted after 30 days</li>
+            </ul>
+
+            <h2>2. Before the Run: Preparation</h2>
+            
+            <h3>Club Owners Should:</h3>
+            <ul>
+                <li>Plan and upload routes in advance when possible</li>
+                <li>Ensure all participants have the app installed and working</li>
+                <li>Verify location permissions are enabled for all members</li>
+                <li>Set clear expectations about pace and difficulty</li>
+                <li>Establish emergency contact procedures</li>
+                <li>Know the route and potential hazards</li>
+            </ul>
+
+            <h3>Participants Should:</h3>
+            <ul>
+                <li>Ensure your device is fully charged</li>
+                <li>Enable location permissions in device settings</li>
+                <li>Test the app before the run starts</li>
+                <li>Bring a fully charged phone with cellular data</li>
+                <li>Know the planned route if available</li>
+                <li>Inform someone outside the club of your plans</li>
+            </ul>
+
+            <h3>General Running Safety</h3>
+            <ul>
+                <li>Wear visible/reflective clothing in low light</li>
+                <li>Carry identification</li>
+                <li>Bring water for longer runs</li>
+                <li>Know your physical limits</li>
+                <li>Check weather conditions</li>
+                <li>Be aware of your surroundings</li>
+            </ul>
+
+            <h2>3. During the Run: Active Tracking</h2>
+            
+            <div class="success-box">
+                <p><strong>Location Sharing Active:</strong> When you join a run, your location is visible to all other participants in real-time.</p>
+            </div>
+
+            <h3>What Happens During Tracking</h3>
+            <ul>
+                <li>GPS updates sent every 5 seconds or when you move 20 meters</li>
+                <li>Your position shown on the map with your display name</li>
+                <li>Your route path drawn as you run</li>
+                <li>All participants can see each other's locations</li>
+            </ul>
+
+            <h3>Club Owner Responsibilities</h3>
+            <ul>
+                <li>Monitor all participants on the map</li>
+                <li>Check for anyone who stops moving unexpectedly</li>
+                <li>Notice if someone deviates significantly from the route</li>
+                <li>Be prepared to assist if someone has issues</li>
+                <li>End the run when everyone is safely finished</li>
+            </ul>
+
+            <h3>Participant Responsibilities</h3>
+            <ul>
+                <li>Keep your phone with you at all times</li>
+                <li>Maintain cellular data connection</li>
+                <li>Stay within a reasonable distance of the group</li>
+                <li>If you need to stop or leave, notify others</li>
+                <li>Use the "Leave Run" feature if departing early</li>
+            </ul>
+
+            <h2>4. Safety Scenarios and Responses</h2>
+            
+            <h3>Scenario: Runner Stops Moving</h3>
+            <p><strong>What the map shows:</strong> Location marker hasn't updated in several minutes</p>
+            <p><strong>Possible reasons:</strong></p>
+            <ul>
+                <li>Stopped for a rest (normal)</li>
+                <li>Device battery died</li>
+                <li>Lost cellular connection</li>
+                <li>Injury or medical issue</li>
+            </ul>
+            <p><strong>What to do:</strong></p>
+            <ul>
+                <li>Try calling or messaging the runner</li>
+                <li>Check their last known location</li>
+                <li>Send someone back to check if nearby</li>
+                <li>Call emergency services if unresponsive and potentially injured</li>
+            </ul>
+
+            <h3>Scenario: Runner Deviates from Route</h3>
+            <p><strong>What the map shows:</strong> Runner moving in unexpected direction</p>
+            <p><strong>Possible reasons:</strong></p>
+            <ul>
+                <li>Took a different path (normal)</li>
+                <li>Running ahead or fell behind</li>
+                <li>Lost or disoriented</li>
+                <li>Emergency situation</li>
+            </ul>
+            <p><strong>What to do:</strong></p>
+            <ul>
+                <li>Contact the runner to check their status</li>
+                <li>Verify they know their location</li>
+                <li>Guide them back to the route if lost</li>
+                <li>Adjust plans if they're taking an alternate route</li>
+            </ul>
+
+            <h3>Scenario: Someone Needs Medical Help</h3>
+            <div class="warning-box">
+                <p><strong>Medical Emergency:</strong> Always call emergency services (999/911) immediately for serious injuries or health issues.</p>
+            </div>
+            <ul>
+                <li>Call emergency services first</li>
+                <li>Share the exact GPS coordinates from the app</li>
+                <li>Send someone to the location if safe to do so</li>
+                <li>Provide first aid if trained</li>
+                <li>Keep the person comfortable until help arrives</li>
+                <li>Notify other group members</li>
+            </ul>
+
+            <h2>5. Technology Limitations</h2>
+            
+            <div class="warning-box">
+                <p><strong>Important:</strong> RunTroop is a tool to enhance safety, not a guarantee. Technology can fail, and you should always use common sense.</p>
+            </div>
+
+            <h3>GPS Accuracy</h3>
+            <ul>
+                <li><strong>Typical accuracy:</strong> 5-15 meters in open areas</li>
+                <li><strong>Reduced accuracy:</strong> Near tall buildings, in forests, or bad weather</li>
+                <li><strong>Urban canyons:</strong> Skyscrapers can cause GPS drift</li>
+                <li><strong>Tunnels:</strong> GPS won't work underground</li>
+            </ul>
+
+            <h3>Connectivity Requirements</h3>
+            <ul>
+                <li><strong>Cellular data required:</strong> App needs internet to share locations</li>
+                <li><strong>Coverage gaps:</strong> Rural areas may have spotty service</li>
+                <li><strong>Network delays:</strong> Updates may be delayed during congestion</li>
+                <li><strong>Roaming:</strong> International users may face restrictions</li>
+            </ul>
+
+            <h3>Battery Considerations</h3>
+            <ul>
+                <li><strong>GPS drains battery:</strong> Expect 10-20% per hour during tracking</li>
+                <li><strong>Cold weather:</strong> Batteries drain faster in cold</li>
+                <li><strong>Older devices:</strong> May drain faster</li>
+                <li><strong>Solution:</strong> Start with a fully charged device</li>
+            </ul>
+
+            <h2>6. Data Security Measures</h2>
+            
+            <h3>How We Protect Your Location Data</h3>
+            <ul>
+                <li><strong>Encrypted transmission:</strong> All data sent over HTTPS/TLS</li>
+                <li><strong>Database encryption:</strong> Location data encrypted at rest</li>
+                <li><strong>Access controls:</strong> Row Level Security enforces club-based permissions</li>
+                <li><strong>No third-party sharing:</strong> Location never sold or shared outside RunTroop</li>
+            </ul>
+
+            <h3>Authentication Security</h3>
+            <ul>
+                <li><strong>Password encryption:</strong> Passwords hashed with industry-standard algorithms</li>
+                <li><strong>Leaked password protection:</strong> Blocks known compromised passwords</li>
+                <li><strong>Secure sessions:</strong> Automatic timeout after inactivity</li>
+                <li><strong>Device verification:</strong> Sessions tied to specific devices</li>
+            </ul>
+
+            <h3>What We Monitor</h3>
+            <ul>
+                <li>Unusual login patterns (potential account breach)</li>
+                <li>Excessive data requests (potential abuse)</li>
+                <li>Suspicious location patterns (potential tracking misuse)</li>
+                <li>Terms of service violations</li>
+            </ul>
+
+            <h2>7. Privacy Best Practices</h2>
+            
+            <h3>Choose Clubs Carefully</h3>
+            <ul>
+                <li>Only join clubs with people you trust</li>
+                <li>Remember: all club members see each other's locations during runs</li>
+                <li>Leave clubs you're no longer active in</li>
+                <li>Report suspicious behavior to club owners</li>
+            </ul>
+
+            <h3>Control Your Visibility</h3>
+            <ul>
+                <li>Location only shared when you actively join a run</li>
+                <li>Leave the run immediately if you feel unsafe</li>
+                <li>You can leave clubs at any time</li>
+                <li>Delete your account if you want to stop using the service</li>
+            </ul>
+
+            <h3>Device Security</h3>
+            <ul>
+                <li>Use a strong, unique password</li>
+                <li>Enable device lock screen</li>
+                <li>Don't share your device with others while logged in</li>
+                <li>Log out on shared or public devices</li>
+            </ul>
+
+            <h2>8. Club Owner Responsibilities</h2>
+            
+            <div class="highlight-box">
+                <p><strong>With Great Power Comes Great Responsibility:</strong> Club owners have special duties to ensure member safety.</p>
+            </div>
+
+            <h3>Member Safety</h3>
+            <ul>
+                <li>Verify new members are legitimate runners</li>
+                <li>Remove members who violate safety guidelines</li>
+                <li>Monitor all participants during active runs</li>
+                <li>Respond to safety concerns promptly</li>
+                <li>Establish clear safety protocols</li>
+            </ul>
+
+            <h3>Data Responsibility</h3>
+            <ul>
+                <li>Don't misuse access to member locations</li>
+                <li>Respect members' privacy outside of runs</li>
+                <li>Don't share location data outside the app</li>
+                <li>Handle member concerns professionally</li>
+            </ul>
+
+            <h3>Run Management</h3>
+            <ul>
+                <li>Plan safe routes appropriate for group skill level</li>
+                <li>End runs properly when complete</li>
+                <li>Don't start runs without adequate participation</li>
+                <li>Cancel runs if conditions are unsafe</li>
+            </ul>
+
+            <h2>9. Reporting Safety Concerns</h2>
+            
+            <h3>If You Experience Harassment</h3>
+            <ul>
+                <li>Leave the club immediately</li>
+                <li>Block the user if possible</li>
+                <li>Report to <a href="mailto:safety@runtroop.app" class="contact-link">safety@runtroop.app</a> with details</li>
+                <li>Contact local authorities if you feel threatened</li>
+            </ul>
+
+            <h3>If You Witness Misuse</h3>
+            <ul>
+                <li>Document what you observed (screenshots if possible)</li>
+                <li>Report to the club owner first</li>
+                <li>If club owner is the issue, report to us</li>
+                <li>Email <a href="mailto:abuse@runtroop.app" class="contact-link">abuse@runtroop.app</a></li>
+            </ul>
+
+            <h3>If You Discover a Security Vulnerability</h3>
+            <ul>
+                <li><strong>Do not</strong> exploit the vulnerability</li>
+                <li><strong>Do not</strong> disclose it publicly</li>
+                <li>Report confidentially to <a href="mailto:security@runtroop.app" class="contact-link">security@runtroop.app</a></li>
+                <li>Provide details about how to reproduce it</li>
+                <li>We'll acknowledge within 24 hours</li>
+            </ul>
+
+            <h2>10. Safety Tips for Different Conditions</h2>
+            
+            <h3>Running at Night</h3>
+            <ul>
+                <li>Wear reflective gear and carry a light</li>
+                <li>Stick to well-lit, populated routes</li>
+                <li>Run in larger groups for added safety</li>
+                <li>Be extra vigilant about traffic</li>
+                <li>Tell someone your planned route and time</li>
+            </ul>
+
+            <h3>Running in Heat</h3>
+            <ul>
+                <li>Start early or late to avoid peak temperatures</li>
+                <li>Bring extra water</li>
+                <li>Know signs of heat exhaustion</li>
+                <li>Slow your pace in extreme heat</li>
+                <li>Seek shade if you feel overheated</li>
+            </ul>
+
+            <h3>Running in Cold/Winter</h3>
+            <ul>
+                <li>Layer clothing appropriately</li>
+                <li>Keep your phone warm (battery drains faster)</li>
+                <li>Watch for ice on surfaces</li>
+                <li>Cover extremities (hands, ears, face)</li>
+                <li>Shorten runs in extreme cold</li>
+            </ul>
+
+            <h3>Running in Urban Areas</h3>
+            <ul>
+                <li>Be aware of traffic at all times</li>
+                <li>Use crosswalks and obey signals</li>
+                <li>Run facing traffic when on roads</li>
+                <li>Stay alert at intersections</li>
+                <li>Keep music/podcasts at safe volume</li>
+            </ul>
+
+            <h3>Running in Rural/Trail Areas</h3>
+            <ul>
+                <li>Tell someone your route beforehand</li>
+                <li>Bring offline maps (cellular may be limited)</li>
+                <li>Watch for wildlife</li>
+                <li>Be prepared for uneven terrain</li>
+                <li>Bring a whistle for emergencies</li>
+            </ul>
+
+            <h2>11. What RunTroop is NOT</h2>
+            
+            <div class="warning-box">
+                <p><strong>Important Limitations:</strong> Understanding what RunTroop cannot do is crucial for your safety.</p>
+            </div>
+
+            <ul>
+                <li><strong>Not an emergency service:</strong> Cannot dispatch help or contact authorities</li>
+                <li><strong>Not a medical device:</strong> Cannot detect injuries or health issues</li>
+                <li><strong>Not a tracking device:</strong> Doesn't work when app is closed or location off</li>
+                <li><strong>Not a guarantee:</strong> Cannot prevent accidents or ensure safety</li>
+                <li><strong>Not a replacement for judgment:</strong> You must still make smart safety decisions</li>
+                <li><strong>Not monitored 24/7:</strong> No one is watching your runs except your club members</li>
+            </ul>
+
+            <h2>12. Contact Us</h2>
+            
+            <p>For safety and security concerns:</p>
+            <ul>
+                <li><strong>Safety Issues:</strong> <a href="mailto:safety@runtroop.app" class="contact-link">safety@runtroop.app</a></li>
+                <li><strong>Security Vulnerabilities:</strong> <a href="mailto:security@runtroop.app" class="contact-link">security@runtroop.app</a></li>
+                <li><strong>Abuse Reports:</strong> <a href="mailto:abuse@runtroop.app" class="contact-link">abuse@runtroop.app</a></li>
+                <li><strong>General Support:</strong> <a href="mailto:support@runtroop.app" class="contact-link">support@runtroop.app</a></li>
+            </ul>
+
+            <div class="highlight-box">
+                <p><strong>Remember:</strong> RunTroop is designed to make group running safer, but your safety ultimately depends on good judgment, preparation, and situational awareness. Run smart, stay safe! 🏃</p>
+            </div>
+        </main>
+
+        <footer>
+            <p><a href="index.html" class="contact-link">← Back to all policies</a></p>
+            <p style="margin-top: 1rem;">© 2025 RunTroop. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
